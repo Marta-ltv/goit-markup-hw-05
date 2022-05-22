@@ -64,12 +64,12 @@
     </header>
 
     <main>
-      <!--Секція Герой-->
 
+      <!--Секція Герой-->
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button class="btn studio" type="button">Заказать услугу</button>
+          <button data-modal-open class="btn studio" type="button">Заказать услугу</button>
         </div>
       </section>
 
@@ -466,5 +466,17 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button data-modal-close class="close-modal">
+          <svg width="11px" height="11px">
+            <use href="./images/icon.svg/close-modal.svg#icon-Vector"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
+    
   </body>
 </html>
